@@ -1,4 +1,4 @@
-# Byte-compiled / optimized / DLL files
+﻿# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
 *$py.class
@@ -214,5 +214,16 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# Streamlit
-.streamlit/secrets.toml
+
+# -- Project-specific ignores --------------------------------------------------
+
+# Trained model artifacts (too large for GitHub - regenerate with train.py)
+*.pkl
+*.joblib
+
+# Raw dataset CSVs (large files - download from Kaggle separately)
+data/*.csv
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
